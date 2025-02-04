@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'task3/css/style.css' %}">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ game }}</title>
+</head>
+
+<body>
+<div class="centered-div">
+        <h2>{{ game }}</h2>
+    <ul>
+        <li>{{ game1 }}<button>{{ buy }}</button></li>
+        <li>{{ game2 }}<button>{{ buy }}</button></li>
+        <li>{{ game3 }}<button>{{ buy }}</button></li>
+    </ul>
+    <p><a href="/platform"><button>Вернуться обратно</button></a></p>
+</div>
+
+</body>
+
+</html>

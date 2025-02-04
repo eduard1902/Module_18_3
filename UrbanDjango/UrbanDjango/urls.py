@@ -24,4 +24,27 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home_view),
     path('class/', TemplateView.as_view(template_name='func_template.html')),
+    path('platform/', TemplateView.as_view(
+        template_name='platform.html',
+        extra_context={'message': 'Главная страница',
+                       'title': 'Главная',
+                       'games': 'Магазин',
+                       'cart': 'Корзина'
+                       })),
+    path('platform/games/', TemplateView.as_view(
+        template_name='games.html',
+        extra_context={'game': 'Игры',
+                       'buy': 'Купить',
+                       'game1': 'Atomik Heart',
+                       'game2': 'Cyberpunk 2077',
+                       'game3': 'PayDay'
+                       }
+    )),
+    path('platform/cart', TemplateView.as_view(
+        template_name='cart.html',
+        extra_context={'title': 'Корзина',
+                       'message': 'Извините, ваша корзина пуста',
+
+                       }
+    )),
 ]
