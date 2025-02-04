@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Центрирование блока</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh; /* Устанавливаем высоту тела документа равной высоте окна браузера */
+            display: flex;
+            justify-content: center; /* Горизонтальное центрирование */
+            align-items: center; /* Вертикальное центрирование */
+        }
+        
+        .centered-div {
+            width: 200px; /* Ширина блока */
+            height: 150px; /* Высота блока */
+            background-color: #4CAF50; /* Цвет фона для наглядности */
+            color: white; /* Цвет текста внутри блока */
+            text-align: center; /* Центрирование текста внутри блока */
+            padding: 20px; /* Внутренние отступы */
+            border-radius: 10px; /* Скругление углов */
+        }
+    </style>
+</head>
+<body>
+    <div class="centered-div">Этот блок находится в центре экрана.</div>
+</body>
+</html>

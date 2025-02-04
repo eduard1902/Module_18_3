@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    height: 100vh; /* Устанавливаем высоту тела документа равной высоте окна браузера */
+    display: flex;
+    justify-content: center; /* Горизонтальное центрирование */
+    align-items: center; /* Вертикальное центрирование */
+}
+
+.centered-div {
+    background-color: #f5f5ac; /* Цвет фона для наглядности */
+    color: rgb(44, 17, 17); /* Цвет текста внутри блока */
+    text-align: center; /* Центрирование текста внутри блока */
+    padding: 20px; /* Внутренние отступы */
+    border-radius: 10px; /* Скругление углов */
+}
+li button{
+    margin-left: 20px;
+}
